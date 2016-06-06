@@ -8,7 +8,7 @@ Delete                   DELETE             Delete or Remove
 function Invoke-DynDNSApi {
     [CmdletBinding()]
     param(
-        [ValidateSet("Session", "Zone", "CNAMERecord")]$Resource,
+        [ValidateSet("Session", "Zone", "ZoneChanges", "CNAMERecord")]$Resource,
         [ValidateSet("Post", "Get", "Put", "Delete")]$Action,
         [array]$Arguments,
         [hashtable]$Data,
